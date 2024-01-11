@@ -12,16 +12,26 @@
 
     <link name="space_station">
       <visual>
-          <origin xyz="0 0 0" rpy="0 0 0"/>
-          <geometry>
-              <mesh filename="package://picknik_accessories/descriptions/furniture/space_station/space_booth.dae"/>
-          </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://picknik_accessories/descriptions/furniture/space_station/space_booth.dae"/>
+        </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-          <geometry>
-              <mesh filename="package://picknik_accessories/descriptions/furniture/space_station/space_booth.dae"/>
-          </geometry>
+        <geometry>
+          <mesh filename="package://picknik_accessories/descriptions/furniture/space_station/space_booth.dae"/>
+        </geometry>
+      </collision>
+      <!-- box collision for the ceiling so that the robot does not try to plan into the open gaps of the ceiling -->
+      <collision>
+        <origin xyz="0 0 2.325" rpy="0 0 0"/>
+        <geometry>
+          <box size="3 2.1 0.05"/>
+        </geometry>
+        <material>
+          <color rgba="1.0 0 0 1"/>
+        </material>
       </collision>
       <inertial>
         <origin xyz="0.225 0.14 0.345" rpy="0 0 0"/>
