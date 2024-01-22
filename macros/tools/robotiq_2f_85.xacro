@@ -4,7 +4,7 @@
   <xacro:arg name="use_fake_hardware" default="True"/>
 
   <xacro:macro name="tool"
-               params="parent_link">
+               params="parent_link com_port:=/dev/ttyUSB0">
 
     <!-- Robotiq 2F Gripper -->
     <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro"/>
@@ -13,11 +13,11 @@
       prefix=""
       parent="${parent_link}"
       use_fake_hardware="$(arg use_fake_hardware)"
-      com_port="/dev/ttyUSB0">
+      com_port="${com_port}">
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:robotiq_gripper>
 
-    <!-- We use grasp_link frame to perform quick tasks such as inspect surface -->
+    <!-- This frame aligns the gripper with the coordinate convention required for motion planning tasks. -->
     <link name="grasp_link"/>
     <joint name="grasp_link_joint" type="fixed">
       <parent link="${parent_link}"/>
