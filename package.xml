@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>picknik_accessories</name>
-  <version>2.10.0</version>
+  <version>4.0.0</version>
   <description>URDFs and geometry for common objects and attachments.</description>
   <maintainer email="joseph.schornak@picknik.ai">Joseph Schornak</maintainer>
-  <license>Proprietary</license>
+  <license>BSD 3-Clause</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

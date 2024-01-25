@@ -1,5 +1,5 @@
 <sdf version="1.6">
-  <world name="moveit_studio">
+  <world name="warehouse">
     <!-- Sim must be faster than the controller rate or there will be an error -->
     <physics name="sim_time" type="ignored">
       <max_step_size>0.005</max_step_size>

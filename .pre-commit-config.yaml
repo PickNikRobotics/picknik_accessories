@@ -23,7 +23,6 @@ repos:
       - id: check-symlinks
       - id: check-yaml
         args: ["--unsafe"] # Fixes errors parsing custom YAML constructors like ur_description's !degrees
-        exclude: 'src/moveit_studio_web/pnpm-lock.yaml'
       - id: debug-statements
       - id: end-of-file-fixer
       - id: mixed-line-ending
@@ -61,7 +60,6 @@ repos:
           ]
         types: [text]
         files: \.(yml|yaml)$
-        exclude: 'src/moveit_studio_web/pnpm-lock.yaml'
 
   - repo: https://github.com/tcort/markdown-link-check
     rev: v3.10.3
