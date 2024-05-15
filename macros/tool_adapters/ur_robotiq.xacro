@@ -5,7 +5,7 @@
 
   <!-- Gripper and UR adapter-->
   <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro"/>
-  <xacro:ur_to_robotiq prefix="" connected_to="${parent_link}" rotation="0"/>
+  <xacro:ur_to_robotiq prefix="" parent="${parent_link}" child="gripper_mount_link" rotation="0"/>
 
   <!-- expose attachment points -->
   <xacro:property name="adapter_tool_mount" scope="parent" value="gripper_mount_link"/>
