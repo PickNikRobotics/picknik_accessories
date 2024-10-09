@@ -1,0 +1,25 @@
+<ridgeback_globals>
+  <actuator>
+    <position
+      class="rail"
+      name="linear_x_joint"
+      joint="linear_x_joint"
+      kp="75000"
+      dampratio="1.0"
+    />
+    <position
+      class="rail"
+      name="linear_y_joint"
+      joint="linear_y_joint"
+      kp="75000"
+      dampratio="1.0"
+    />
+    <position
+      class="robot"
+      name="rotational_yaw_joint"
+      joint="rotational_yaw_joint"
+      kp="75000"
+      dampratio="1.0"
+    />
+  </actuator>
+</ridgeback_globals>
