@@ -1,4 +1,20 @@
 <ridgeback_globals>
+  <default>
+    <default class="rail">
+      <joint armature="0.1" damping="1" axis="0 0 1" range="-5.0 5.0" />
+      <general
+        dyntype="none"
+        biastype="affine"
+        ctrlrange="-5.0 5.0"
+        forcerange="-50000 50000"
+      />
+    </default>
+  </default>
+  <asset>
+    <!-- Ridgeback -->
+    <mesh name="chassis_link" file="ridgeback/body.stl" />
+    <mesh name="top_link" file="ridgeback/top.stl" />
+  </asset>
   <actuator>
     <position
       class="rail"
