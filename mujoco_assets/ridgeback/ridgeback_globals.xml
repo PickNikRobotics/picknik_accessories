@@ -12,8 +12,8 @@
   </default>
   <asset>
     <!-- Ridgeback -->
-    <mesh name="chassis_link" file="ridgeback/body.stl" />
-    <mesh name="top_link" file="ridgeback/top.stl" />
+    <mesh name="chassis_link" file="body.stl" />
+    <mesh name="top_link" file="top.stl" />
   </asset>
   <actuator>
     <position
