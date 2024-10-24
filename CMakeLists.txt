@@ -7,6 +7,7 @@ install(
   DIRECTORY
     descriptions
     macros
+    mujoco_assets
   DESTINATION
     share/${PROJECT_NAME}
 )
