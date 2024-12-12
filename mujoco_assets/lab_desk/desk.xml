@@ -131,7 +131,8 @@
       conaffinity="0"
       group="2"
     />
-    <geom type="mesh" class="collision" mesh="flask" group="4" />
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
     <joint type="free" damping="1" />
   </body>
   <body name="flask_2" pos="-0.36 0.61 0.472476" euler="0 0 -30">
@@ -142,8 +143,9 @@
       contype="0"
       conaffinity="0"
       group="2"
-    />
-    <geom type="mesh" class="collision" mesh="flask" group="4" />
+    />    
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
     <joint type="free" damping="1" />
   </body>
   <body name="flask_3" pos="-0.3 0.7 0.472476" euler="0 0 -30">
@@ -155,7 +157,8 @@
       conaffinity="0"
       group="2"
     />
-    <geom type="mesh" class="collision" mesh="flask" group="4" />
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
     <joint type="free" damping="1" />
   </body>
   <!-- <body name="flask_4" pos="0.251 -0.428 1.0242" euler="0 0 -30">

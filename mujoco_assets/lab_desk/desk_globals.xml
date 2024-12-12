@@ -104,6 +104,7 @@
     <mesh file="assets/test_tubes.obj" />
     <mesh file="assets/test_tubes_stand.obj" />
     <mesh file="assets/flask.obj" />
+    <mesh file="assets/flask-cone.stl" />
     <mesh file="assets/bottle.obj" />
   </asset>
 
