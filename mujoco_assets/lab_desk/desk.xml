@@ -122,7 +122,9 @@
     />
     <geom type="mesh" class="collision" mesh="test_tubes" group="4" />
   </body>
-  <body name="flask_1" pos="-0.5 0.69 0.472476" euler="0 0 -30">
+  <body name="flask_1" pos="-0.5 0.69 0.472476" euler="0 0 -30" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="glass"
       mesh="flask"
@@ -131,11 +133,13 @@
       conaffinity="0"
       group="2"
     />
-    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
-    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4" friction="1.5"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4" friction="1.5"/>
     <joint type="free" damping="1" />
   </body>
-  <body name="flask_2" pos="-0.36 0.61 0.472476" euler="0 0 -30">
+  <body name="flask_2" pos="-0.36 0.61 0.472476" euler="0 0 -30" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="glass"
       mesh="flask"
@@ -144,11 +148,13 @@
       conaffinity="0"
       group="2"
     />    
-    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
-    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4" friction="1.5"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4" friction="1.5"/>
     <joint type="free" damping="1" />
   </body>
-  <body name="flask_3" pos="-0.3 0.7 0.472476" euler="0 0 -30">
+  <body name="flask_3" pos="-0.3 0.7 0.472476" euler="0 0 -30" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="glass"
       mesh="flask"
@@ -157,8 +163,8 @@
       conaffinity="0"
       group="2"
     />
-    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4"/>
-    <geom type="mesh" class="collision" mesh="flask-cone" group="4"/>
+    <geom type="cylinder" size="0.014 0.04" pos="0 0 0.06" class="collision" group="4" friction="1.5"/>
+    <geom type="mesh" class="collision" mesh="flask-cone" group="4" friction="1.5"/>
     <joint type="free" damping="1" />
   </body>
   <!-- <body name="flask_4" pos="0.251 -0.428 1.0242" euler="0 0 -30">
@@ -168,7 +174,9 @@
   </body> -->
 
 
-  <body name="bottle_1" pos="0 0.9 0.473807" euler="0 0 -20">
+  <body name="bottle_1" pos="0 0.9 0.473807" euler="0 0 -20" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="bottle"
       mesh="bottle"
@@ -183,11 +191,13 @@
       mesh="bottle"
       group="4"
       solref="0.01 1.1"
-      friction="0.5"
+      friction="1.5"
     />
     <joint type="free" damping="1" />
   </body>
-  <body name="bottle_2" pos="-0.1 0.85 0.473807" euler="0 0 10">
+  <body name="bottle_2" pos="-0.1 0.85 0.473807" euler="0 0 10" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="bottle"
       mesh="bottle"
@@ -202,11 +212,13 @@
       mesh="bottle"
       group="4"
       solref="0.01 1.1"
-      friction="0.5"
+      friction="1.5"
     />
     <joint type="free" damping="1" />
   </body>
-  <body name="bottle_3" pos="0.05 0.85 0.473807" euler="0 0 -30">
+  <body name="bottle_3" pos="0.05 0.85 0.473807" euler="0 0 -30" >
+
+      <inertial mass="0.001" pos="0 0 0" diaginertia="0.01 0.01 0.01" />
     <geom
       material="bottle"
       mesh="bottle"
@@ -221,7 +233,7 @@
       mesh="bottle"
       group="4"
       solref="0.01 1.1"
-      friction="0.5"
+      friction="1.5"
     />
     <joint type="free" damping="1" />
   </body>
