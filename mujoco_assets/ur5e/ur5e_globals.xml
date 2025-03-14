@@ -57,9 +57,10 @@
     <exclude body1="base_platform" body2="base" />
   </contact>
 
+  <!-- <force> and <torque> tags referencing the tcp_fts_sensor site -->
   <sensor>
-    <force site="robotiq_ft_sensor" />
-    <torque site="robotiq_ft_sensor" />
+    <force site="tcp_fts_sensor" />
+    <torque site="tcp_fts_sensor" />
   </sensor>
 
   
