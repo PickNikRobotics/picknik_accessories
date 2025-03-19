@@ -23,41 +23,41 @@
     <material name="fanuc_gray28" rgba="0.28 0.28 0.28 1.0" />
     <material name="fanuc_black" rgba="0.0 0.0 0.0 1.0" />
     <!-- Define meshes with appropriate scaling -->
-    <mesh name="base_link" file="assets/lrmate200id/visual/base_link.stl" />
-    <mesh name="link_1" file="assets/lrmate200id/visual/link_1.stl" />
-    <mesh name="link_2" file="assets/lrmate200id/visual/link_2.stl" />
-    <mesh name="link_3" file="assets/lrmate200id/visual/link_3.stl" />
-    <mesh name="link_4" file="assets/lrmate200id/visual/link_4.stl" />
-    <mesh name="link_5" file="assets/lrmate200id/visual/link_5.stl" />
-    <mesh name="link_6" file="assets/lrmate200id/visual/link_6.stl" />
+    <mesh name="base_link" file="meshes/lrmate200id/visual/base_link.stl" />
+    <mesh name="link_1" file="meshes/lrmate200id/visual/link_1.stl" />
+    <mesh name="link_2" file="meshes/lrmate200id/visual/link_2.stl" />
+    <mesh name="link_3" file="meshes/lrmate200id/visual/link_3.stl" />
+    <mesh name="link_4" file="meshes/lrmate200id/visual/link_4.stl" />
+    <mesh name="link_5" file="meshes/lrmate200id/visual/link_5.stl" />
+    <mesh name="link_6" file="meshes/lrmate200id/visual/link_6.stl" />
     <!-- Collision meshes -->
     <mesh
       name="base_link_collision"
-      file="assets/lrmate200id/collision/base_link.stl"
+      file="meshes/lrmate200id/collision/base_link.stl"
     />
     <mesh
       name="link_1_collision"
-      file="assets/lrmate200id/collision/link_1.stl"
+      file="meshes/lrmate200id/collision/link_1.stl"
     />
     <mesh
       name="link_2_collision"
-      file="assets/lrmate200id/collision/link_2.stl"
+      file="meshes/lrmate200id/collision/link_2.stl"
     />
     <mesh
       name="link_3_collision"
-      file="assets/lrmate200id/collision/link_3.stl"
+      file="meshes/lrmate200id/collision/link_3.stl"
     />
     <mesh
       name="link_4_collision"
-      file="assets/lrmate200id/collision/link_4.stl"
+      file="meshes/lrmate200id/collision/link_4.stl"
     />
     <mesh
       name="link_5_collision"
-      file="assets/lrmate200id/collision/link_5.stl"
+      file="meshes/lrmate200id/collision/link_5.stl"
     />
     <mesh
       name="link_6_collision"
-      file="assets/lrmate200id/collision/link_6.stl"
+      file="meshes/lrmate200id/collision/link_6.stl"
     />
   </asset>
 
