@@ -102,11 +102,13 @@
                   pos="0 0.1 0"
                   quat="-1 1 0 0"
                 />
-                <!-- site for end effector's f/t sensor right at the base of the robotiq gripper -->
+                <!-- Site for FTS the base of the robotiq gripper -->
+                <!-- The site name will be used for the simulated hardware interface's name -->
+                <!-- If you have corresponding hardware, we recommend setting this to the hardware's hardware interface name -->
                 <site
-                  name="robotiq_ft_sensor"
+                  name="tcp_fts_sensor"
                   size="0.01"
-                  pos="0 0.1 0"
+                  pos="0.001 0.1 0"
                   quat="-1 1 0 0"
                 />
                 <body
@@ -133,6 +135,10 @@
                     class="visual"
                   />
                 </body>
+                <!-- The camera frame according to REP 103 -->
+                <!-- Positive X points to right of camera -->
+                <!-- Positive Y points up towards the top of the camera -->
+                <!-- Positive Z points to behind the camera -->
                 <camera
                   name="wrist_camera"
                   pos="0.0 0.2 0.05"
@@ -141,6 +147,7 @@
                   resolution="640 480"
                   euler="1.57 0.0 0.0"
                 />
+                <!-- The camera optical frame should be set to the <camera> position rotated 180 degrees about its x-axis -->
                 <site
                   name="wrist_camera_optical_frame"
                   pos="0.0 0.2 0.05"
