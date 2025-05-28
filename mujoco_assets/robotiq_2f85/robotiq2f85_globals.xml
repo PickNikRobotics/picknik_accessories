@@ -46,7 +46,7 @@
       forcerange="-5 5"
       ctrlrange="0 .8"
       gainprm="100 0 0"
-      biasprm="0 -100 -25"
+      biasprm="0 -100 -150"
     />
   </actuator>
 
@@ -244,12 +244,12 @@
     </default>
     <default class="robot">
       <material specular="0.5" shininess="0.25" />
-      <joint armature="1.0" damping="0.75" axis="0 0 1" range="-3 3" />
+      <joint armature="0.1" damping="1" axis="0 0 1" range="-2.8973 2.8973" />
       <general
         dyntype="none"
         biastype="affine"
-        ctrlrange="-3 3"
-        forcerange="-5000 5000"
+        ctrlrange="-3.14159 3.14159"
+        forcerange="-50000 50000"
       />
       <default class="limitedJoints">
         <joint limited="true" />
