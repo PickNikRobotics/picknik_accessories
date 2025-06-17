@@ -126,7 +126,7 @@
             class="collision"
             mesh="robotiq_85_finger_tip_link"
           />
-          <body name="right_pad" pos="0 -0.0189 0.01352">
+          <body gravcomp="1" name="right_pad" pos="0 -0.0189 0.01352">
             <geom class="pad_box1" name="right_pad1" />
             <geom class="pad_box2" name="right_pad2" />
             <inertial
@@ -136,7 +136,7 @@
               diaginertia="4.73958e-07 3.64583e-07 1.23958e-07"
             />
             <geom class="visual" mesh="robotiq_85_pad" />
-            <body name="right_silicone_pad">
+            <body gravcomp="1" name="right_silicone_pad">
               <geom
                 class="visual"
                 mesh="robotiq_85_silicone_pad"
@@ -247,7 +247,7 @@
             class="collision"
             mesh="robotiq_85_finger_tip_link"
           />
-          <body name="left_pad" pos="0 -0.0189 0.01352">
+          <body gravcomp="1" name="left_pad" pos="0 -0.0189 0.01352">
             <geom class="pad_box1" name="left_pad1" />
             <geom class="pad_box2" name="left_pad2" />
             <inertial
@@ -257,7 +257,7 @@
               diaginertia="4.73958e-07 3.64583e-07 1.23958e-07"
             />
             <geom class="visual" mesh="robotiq_85_pad" />
-            <body name="left_silicone_pad">
+            <body gravcomp="1" name="left_silicone_pad">
               <geom
                 class="visual"
                 mesh="robotiq_85_silicone_pad"
