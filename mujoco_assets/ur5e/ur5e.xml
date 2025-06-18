@@ -1,5 +1,5 @@
 <ur5e_body>
-  <body name="base" pos="0.0 0.0 0.2" euler="0 0 0" childclass="ur5e">
+  <body gravcomp="1" name="base" pos="0.0 0.0 0.2" euler="0 0 0" childclass="ur5e">
     <inertial
       mass="4.0"
       pos="0 0 0"
@@ -7,7 +7,7 @@
     />
     <geom mesh="base_0" material="black" class="visual" />
     <geom mesh="base_1" material="jointgray" class="visual" />
-    <body name="shoulder_link" pos="0 0 0.163">
+    <body gravcomp="1" name="shoulder_link" pos="0 0 0.163">
       <inertial
         mass="3.7"
         pos="0 0 0"
@@ -18,7 +18,7 @@
       <geom mesh="shoulder_1" material="black" class="visual" />
       <geom mesh="shoulder_2" material="jointgray" class="visual" />
       <geom class="collision" size="0.06 0.06" pos="0 0 -0.04" />
-      <body name="upper_arm_link" pos="0 0.138 0" quat="1 0 1 0">
+      <body gravcomp="1" name="upper_arm_link" pos="0 0.138 0" quat="1 0 1 0">
         <inertial
           mass="8.393"
           pos="0 0 0.2125"
@@ -36,7 +36,7 @@
           size="0.06 0.06"
         />
         <geom class="collision" size="0.05 0.2" pos="0 0 0.2" />
-        <body name="forearm_link" pos="0 -0.131 0.425">
+        <body gravcomp="1" name="forearm_link" pos="0 -0.131 0.425">
           <inertial
             mass="2.275"
             pos="0 0 0.196"
@@ -54,7 +54,7 @@
             size="0.055 0.06"
           />
           <geom class="collision" size="0.038 0.19" pos="0 0 0.2" />
-          <body name="wrist_1_link" pos="0 0 0.392" quat="1 0 1 0">
+          <body gravcomp="1" name="wrist_1_link" pos="0 0 0.392" quat="1 0 1 0">
             <inertial
               mass="1.219"
               pos="0 0.127 0"
@@ -70,7 +70,7 @@
               quat="1 1 0 0"
               size="0.04 0.07"
             />
-            <body name="wrist_2_link" pos="0 0.127 0">
+            <body gravcomp="1" name="wrist_2_link" pos="0 0.127 0">
               <inertial
                 mass="1.219"
                 pos="0 0 0.1"
@@ -87,7 +87,7 @@
                 quat="1 1 0 0"
                 size="0.04 0.04"
               />
-              <body name="wrist_3_link" pos="0 0 0.1">
+              <body gravcomp="1" name="wrist_3_link" pos="0 0 0.1">
                 <inertial
                   mass="0.1889"
                   pos="0 0.0771683 0"
