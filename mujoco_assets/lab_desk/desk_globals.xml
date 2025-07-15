@@ -75,7 +75,7 @@
       specular="0.5"
       shininess="0.5"
     />
-    <material name="glass" rgba="0.659 0.800 0.843 0.3" />
+    <material name="glass" rgba="0.659 0.800 0.843 1" />
     <material
       name="stirrer"
       texture="stirrer_texture"
