@@ -19,7 +19,9 @@
                                     extension_length="$(arg epick_extension_length)"
                                     suction_cup_radius="$(arg epick_suction_cup_radius)"
                                     suction_cup_height="$(arg epick_suction_cup_height)"
-                                    tcp_stroke_compensation="$(arg epick_tcp_stroke_compensation)"/>
+	                            tcp_stroke_compensation="$(arg epick_tcp_stroke_compensation)"
+	                            use_fake_hardware="false"
+	    />
 
     <link name="grasp_link"/>
     <joint name="grasp_link_joint" type="fixed">
