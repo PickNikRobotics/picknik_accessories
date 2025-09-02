@@ -1,6 +1,6 @@
 # factory_sim 3d printing assets
 
-The `factory_sim` example workspace models a small factory environment. The ["Pick and Place Brackets from Left Bin"](https://github.com/PickNikRobotics/moveit_pro_example_ws/blob/main/src/factory_sim/objectives/pick_and_place_brackets_from_left_bin.xml) models an automotive-like bracket part for the robot to pick, place on a jig, and the deposit into a bin.
+The `factory_sim` example workspace models a small factory environment. The ["Pick and Place Brackets from Left Bin"](https://github.com/PickNikRobotics/moveit_pro_example_ws/blob/main/src/factory_sim/objectives/pick_and_place_brackets_from_left_bin.xml) Objective models an automotive-like bracket part for the robot to pick, place on a jig, and the deposit into a bin.
 
 ![Pick and Place Brackets from Left Bin](images/pick_and_place_brackets_from_left_bin_objective_preview1.png)
 
