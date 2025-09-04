@@ -47,3 +47,8 @@ The jig base has five holes that can be used to mount onto a flat surface, using
 Once assembled, the bracket part should slide easily over the posts and come to rest in the seat of the jig.  
 
 ![Bracket on Jig](images/bracket_part_and_jig1.jpg)
+
+## Bins
+We recommend using the [ULINE Straight Wall Container 24" x 15" x 7 1⁄2"](https://www.uline.com/Product/ProductDetailRootItem?modelnumber=S-19509) for recreating the pick and place demo, which is what the bins in the simulation are modelled after.  
+
+![ULINE Bin](images/uline_bin1.png)
