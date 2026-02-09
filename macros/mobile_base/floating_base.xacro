@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:macro name="floating_base" params="parent child">
+        <!-- Links -->
+        <link name="body_origin"/>
+        <link name="body_link1"/>
+        <link name="body_link2"/>
+        <link name="body_link3"/>
+        <link name="body_link4"/>
+        <link name="body_link5"/>
+
+        <!-- Joints -->
+        <joint name="${parent}_to_body" type="fixed">
+            <parent link="${parent}"/>
+            <child link="body_origin"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </joint>
+        <joint name="body_joint_X" type="prismatic">
+            <parent link="body_origin"/>
+            <child link="body_link1"/>
+            <axis xyz="1 0 0"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-5.0" upper="5.0" velocity="0"/>
+        </joint>
+        <joint name="body_joint_Y" type="prismatic">
+            <parent link="body_link1"/>
+            <child link="body_link2"/>
+            <axis xyz="0 1 0"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-5.0" upper="5.0" velocity="0"/>
+        </joint>
+        <joint name="body_joint_Z" type="prismatic">
+            <parent link="body_link2"/>
+            <child link="body_link3"/>
+            <axis xyz="0 0 1"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-5.0" upper="5.0" velocity="0"/>
+        </joint>
+        <joint name="body_joint_yaw" type="revolute">
+            <parent link="body_link3"/>
+            <child link="body_link4"/>
+            <axis xyz="0 0 1"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="0"/>
+        </joint>
+        <joint name="body_joint_pitch" type="revolute">
+            <parent link="body_link4"/>
+            <child link="body_link5"/>
+            <axis xyz="0 1 0"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="0"/>
+        </joint>
+        <joint name="body_joint_roll" type="revolute">
+            <parent link="body_link5"/>
+            <child link="${child}"/>
+            <axis xyz="1 0 0"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="0"/>
+        </joint>
+    </xacro:macro>
+
+
+    <xacro:macro name="floating_base_control" >
+        <ros2_control name="FakeSystem" type="system">
+            <hardware>
+                <plugin>mock_components/GenericSystem</plugin>
+            </hardware>
+            <joint name="body_joint_roll">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="body_joint_pitch">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="body_joint_yaw">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="body_joint_Z">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="body_joint_Y">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="body_joint_X">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+
+        </ros2_control>
+    </xacro:macro>
+</robot>
