@@ -138,7 +138,7 @@
       group="4"
     />
   </body>
-  <body name="test_tubes_stand" pos="-0.7 0.85 0.472476" euler="0 0 -30">
+  <body name="test_tubes_stand" pos="0.3 0.85 0.472476" euler="0 0 0">
     <freejoint/>
     <geom
       material="test_tubes_stand"
